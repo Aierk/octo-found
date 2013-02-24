@@ -11,5 +11,5 @@ An Octopress theme based on Zurb Foundation.
 ## Uninstalling
 
 `rake install['classic']`
-`git rm sass/_settings.scss sass/app.scss source/images/foundation source/javascripts/foundation`
+`git rm -r sass/_settings.scss sass/app.scss source/images/foundation source/javascripts/foundation`
 
