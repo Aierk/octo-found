@@ -4,6 +4,12 @@ single: true
 ---
 
 <div class="post">
+<aside class="common">
+  {% if site.common_asides.size %}
+    {% include_array common_asides %}
+  {% endif %}
+</aside>
+
 <article class="hentry" role="article">
   {% include article.html %}
   <footer>
@@ -31,4 +37,10 @@ single: true
     <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
   </section>
 {% endif %}
+
+<aside class="social">
+  {% if site.post_asides.size %}
+    {% include_array post_asides %}
+  {% endif %}
+</aside>
 </div>

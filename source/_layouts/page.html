@@ -3,6 +3,12 @@ layout: default
 ---
 
 <div class="page">
+<aside class="common">
+  {% if site.common_asides.size %}
+    {% include_array common_asides %}
+  {% endif %}
+</aside>
+
 <article role="article">
   {% if page.title %}
   <header>
@@ -30,4 +36,10 @@ layout: default
     <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
   </section>
 {% endif %}
+
+<aside class="social">
+  {% if site.page_asides.size %}
+    {% include_array page_asides %}
+  {% endif %}
+</aside>
 </div>
