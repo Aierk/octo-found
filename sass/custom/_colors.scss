@@ -41,3 +41,15 @@
 //$pre-bg: $base03;
 //$pre-border: darken($base02, 5);
 //$pre-color: $base1;
+
+aside.sidebar {
+  opacity: 0.4;
+
+  @include transition-property(opacity);
+  @include transition-duration(0.3s);
+  @include transition-timing-function(ease-in);
+
+  &:hover {
+    opacity: 1;
+  }
+}
