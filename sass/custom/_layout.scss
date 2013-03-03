@@ -32,6 +32,9 @@
 
   & > aside.sidebar {
     @include grid-column(4, $float: left);
+  }
+
+  & > aside.sidebar .panel {
     overflow: hidden;
   }
 }
