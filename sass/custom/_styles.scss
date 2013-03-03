@@ -7,3 +7,10 @@ $fontAwesomePath: "../assets/font-awesome/font";
 
 // http://foundation.zurb.com
 @import "../../source/assets/foundation/scss/foundation.scss";
+
+// Octo-found customization variables
+$octofound-article-divider-size: 5px;
+$octofound-article-divider-style: solid;
+$octofound-article-divider-padding: $topbar-margin-bottom;
+
+$octofound-sidebar-opacity: 0.7;

@@ -34,11 +34,18 @@
     @include grid-column(4, $float: left);
   }
 
+  & > .blog-posts > article {
+    padding-bottom: $octofound-article-divider-padding;
+    margin-bottom: $octofound-article-divider-padding;
+    border-bottom: $octofound-article-divider-size $octofound-article-divider-style $primary-color;
+  }
+
   & > aside.sidebar .panel {
     overflow: hidden;
   }
 }
 
 #main {
-  margin-top: 2 * $topbar-margin-bottom;
+  margin-top: 1.2 * $topbar-height;
 }
+
