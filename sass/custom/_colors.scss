@@ -53,3 +53,7 @@ aside.sidebar {
     opacity: 1;
   }
 }
+
+a:visited {
+  color: darken($anchor-font-color, 20%);
+}
