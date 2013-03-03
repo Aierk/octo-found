@@ -1,6 +1,13 @@
 <ul class="title-area">
   <li class="name">
-    <h1><a href="#">{{site.title}}</a></h1>
+    <h1>
+      <a href="{{ root_url }}/">
+        {{site.title}}
+        {{% if site.subtitle %}}
+          <small>{{ site.subtitle }}</small>
+        {{% endif %}}
+      </a>
+    </h1>
   </li>
   {% include custom/header.html %}
 </ul>
