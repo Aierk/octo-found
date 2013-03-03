@@ -1,3 +1,6 @@
 [submodule "source/assets/foundation"]
 	path = source/assets/foundation
 	url = git@github.com:rishabhsrao/foundation.git
+[submodule "source/assets/font-awesome"]
+	path = source/assets/font-awesome
+	url = git@github.com:rishabhsrao/Font-Awesome.git
