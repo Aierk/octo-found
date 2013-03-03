@@ -5,7 +5,29 @@
   </ul>
 
   <ul class="right">
-    <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS"><i class="icon-rss"></i> RSS</a></li>
+    {% if site.github_user %}
+      {% if site.github_show_profile_link %}
+      <li><a href="https://github.com/{{site.github_user}}" title="Catch me on Github"><i class="icon-github-alt"></i></a></li>
+      {% endif %}
+    {% endif %}
+
+    {% if site.twitter_user %}
+      <li><a href="https://twitter.com/{{ site.twitter_user }}" title="Catch me on Twitter"><i class="icon-twitter"></i></a></li>
+    {% endif %}
+
+    {% if site.facebook_user %}
+      <li><a href="https://facebook.com/{{ site.facebook_user }}" title="Catch me on Facebook"><i class="icon-facebook"></i></a></li>
+    {% endif %}
+
+    {% if site.pinboard_user %}
+      <li><a href="http://pinboard.in/u:{{ site.pinboard_user }}" title="Catch me on Pinboard">Pinboard</a></li>
+    {% endif %}
+
+    {% if site.delicious_user %}
+      <li><a href="http://delicious.com/{{ site.delicious_user }}" title="Catch me on Delicious">Delicious</li>
+    {% endif %}
+
+    <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="Subscribe via RSS"><i class="icon-rss"></i></a></li>
     {% if site.subscribe_email %}
       <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
     {% endif %}
