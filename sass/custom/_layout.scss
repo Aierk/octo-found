@@ -21,19 +21,21 @@
 //$sidebar-width-wide: 300px;
 
 .page,
-.post {
+.post,
+.blog-index {
   @include grid-row();
 
   & > aside.common {
-    @include grid-column(3);
+    @include grid-column(2, $float: left);
   }
 
   & > article,
-  & > .comments {
-    @include grid-column(6);
+  & > .comments,
+  & > .blog-posts {
+    @include grid-column(8, $float: left);
   }
 
   & > aside.social {
-    @include grid-column(3);
+    @include grid-column(2, $float: left);
   }
 }
