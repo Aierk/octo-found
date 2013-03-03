@@ -1,0 +1,3 @@
+[submodule "source/assets/foundation"]
+	path = source/assets/foundation
+	url = git@github.com:rishabhsrao/foundation.git
