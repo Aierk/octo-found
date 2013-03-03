@@ -1,8 +1,8 @@
 {% if site.github_user %}
 <section>
-  <h1>GitHub Repos</h1>
+  <h2 class="subheader"><i class="icon-github"></i> GitHub Repos</h2>
   <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
+    <li class="loading"><i class="icon-spinner icon-spin"></i> Loading repos...</li>
   </ul>
   {% if site.github_show_profile_link %}
   <a href="https://github.com/{{site.github_user}}">@{{site.github_user}}</a> on GitHub
