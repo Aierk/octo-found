@@ -1,15 +1,18 @@
 <section class="top-bar-section">
   <ul class="left">
+    <li class="divider"></li>
     {% include custom/navigation.html %}
   </ul>
 
   <ul class="right">
     <li class="divider"></li>
-    <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+    <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS"><i class="icon-rss"></i> RSS</a></li>
     {% if site.subscribe_email %}
       <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
     {% endif %}
+
     {% if site.simple_search %}
+      <li class="divider hide-for-small"></li>
       <li class="has-form">
         <form action="{{ site.simple_search }}" method="get">
           <div class="row collapse">
@@ -18,7 +21,7 @@
               <input class="search" type="text" name="q" results="0" placeholder="Search..."/>
             </div>
             <div class="small-4 columns">
-              <button type="submit" class="button prefix">Search</button>
+              <button type="submit" class="button radius postfix"><i class="icon-search"></i></button>
             </div>
           </div>
         </form>
