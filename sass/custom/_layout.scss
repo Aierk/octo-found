@@ -29,8 +29,10 @@
     @include grid-column(2, $float: left);
   }
 
-  & > article,
-  & > .comments,
+  & > article {
+    @include grid-column(10, $float: left);
+  }
+
   & > .blog-posts {
     @include grid-column(8, $float: left);
   }
