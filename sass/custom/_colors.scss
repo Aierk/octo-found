@@ -57,3 +57,8 @@ aside.sidebar {
 a:visited {
   color: darken($anchor-font-color, 20%);
 }
+
+pre {
+  @include panel();
+  overflow: auto;
+}
