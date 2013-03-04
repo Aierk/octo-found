@@ -25,10 +25,16 @@ footer {
 
   @include grid-row();
 
-  .html5 ,
-  .octopress,
-  .humans {
+  .html5 {
     @include grid-column($columns: 4, $float: left);
+  }
+
+  .octopress {
+    @include grid-column($columns: 4, $float: left, $center: true);
+  }
+
+  .humans {
+    @include grid-column($columns: 4, $float: right);
   }
 
   .html5 a,
