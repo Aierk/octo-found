@@ -62,3 +62,7 @@ pre {
   @include panel();
   overflow: auto;
 }
+
+body {
+  background: url('../images/bright_squares.png');
+}

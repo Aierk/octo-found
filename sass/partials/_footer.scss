@@ -1,3 +1,4 @@
+/*
 body > footer {
   @extend .sans;
   font-size: .8em;
@@ -16,4 +17,42 @@ body > footer {
     @include link-colors($footer-link-color, $footer-link-color-hover, $visited: $footer-link-color);
   }
   p:last-child { margin-bottom: 0; }
+}
+*/
+
+footer {
+  height: 3 * $topbar-height;
+
+  @include grid-row();
+
+  .html5 ,
+  .octopress,
+  .humans {
+    @include grid-column($columns: 4, $float: left);
+  }
+
+  .html5 a,
+  .octopress a,
+  .humans a {
+    background: url("../images/footer-sprites.png") no-repeat;
+    display: block;
+  }
+
+  .html5 a {
+    background-position: 0 0;
+    width: 42px;
+    height: 20px;
+  }
+
+  .octopress a {
+    background-position: -42px 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .humans a {
+    background-position: -142px 0;
+    width: 85px;
+    height: 30px;
+  }
 }
