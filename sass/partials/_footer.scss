@@ -9,7 +9,7 @@ footer.bottom-bar {
   }
 
   .item {
-    @include grid-column($columns: 4, $float: left);
+    @include grid-column($columns: 4, $float: left, $collapse: true);
     margin-top: 0.5 * $topbar-height;
   }
 

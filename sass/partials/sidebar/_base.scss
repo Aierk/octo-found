@@ -1,6 +1,7 @@
 $octofound-sidebar-opacity: 0.7;
 
 aside.sidebar {
+/*
   opacity: $octofound-sidebar-opacity;
 
   @include transition-property(opacity);
@@ -10,4 +11,5 @@ aside.sidebar {
   &:hover {
     opacity: 1;
   }
+*/
 }
