@@ -1,8 +1,24 @@
-footer {
+footer.bottom-bar {
   height: 3 * $topbar-height;
+  background: url("../images/dark-squares.png");
+  border-top: 6px groove $header-font-color;
+  margin-top: $topbar-height;
 
-  ul.credits {
-    @include block-grid($per-row: 3);
+  .credits {
+    @include grid-row();
+  }
+
+  .item {
+    @include grid-column($columns: 4, $float: left);
+    margin-top: 0.5 * $topbar-height;
+  }
+
+  .html5 {
+    top: $topbar-height;
+  }
+
+  .humans {
+    top: $topbar-height;
   }
 
   .html5 a,
@@ -10,6 +26,7 @@ footer {
   .humans a {
     background: url("../images/footer-sprites.png") no-repeat;
     display: block;
+    margin: auto;
   }
 
   .html5 a {
