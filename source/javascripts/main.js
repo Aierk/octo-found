@@ -2,5 +2,11 @@
 jQuery.noConflict();
 
 jQuery(function() {
-  jQuery(document).foundation();
+  if(Galleria) {
+    Galleria.loadTheme('/assets/galleria/themes/classic/galleria.classic.min.js');
+    Galleria.configure({
+      lightbox: true
+    });
+    Galleria.run('.image-gallery');
+  }
 });
