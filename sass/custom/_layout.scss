@@ -1,0 +1,9 @@
+.pricing-table-row {
+  img {
+    display: inline;
+  }
+}
+
+.four.columns {
+  @include grid-column(4, $float: left);
+}
